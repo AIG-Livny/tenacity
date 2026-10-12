@@ -427,6 +427,8 @@ void ProjectManager::OnCloseWindow(wxCloseEvent & event)
    // MY: Use routine here so other processes can make same check
    bool bHasTracks = !tracks.empty();
 
+   sbSkipPromptingForSave=true;
+
    // We may not bother to prompt the user to save, if the
    // project is now empty.
    if (!sbSkipPromptingForSave

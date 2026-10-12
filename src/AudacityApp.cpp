@@ -842,7 +842,7 @@ AudacityApp::~AudacityApp()
 }
 
 void AudacityApp::ShowSplashScreen() {
-   // Bug 718: Position splash screen on same screen 
+   // Bug 718: Position splash screen on same screen
    // as where Audacity project will appear.
    wxRect wndRect;
    bool bMaximized = false;
@@ -877,11 +877,11 @@ void AudacityApp::ShowSplashScreen() {
       }
    );
 
-   // Unfortunately with the Windows 10 Creators update, the splash screen 
+   // Unfortunately with the Windows 10 Creators update, the splash screen
    // now appears before setting its position.
-   // On a dual monitor screen it will appear on one screen and then 
+   // On a dual monitor screen it will appear on one screen and then
    // possibly jump to the second.
-   // We could fix this by writing our own splash screen and using Hide() 
+   // We could fix this by writing our own splash screen and using Hide()
    // until the splash scren was correctly positioned, then Show()
 
    // Possibly move it on to the second screen...
@@ -1179,7 +1179,7 @@ bool AudacityApp::InitPart2()
 
    AudacityProject *project;
 
-   ShowSplashScreen();
+   //ShowSplashScreen();
 
    {
       // ANSWER-ME: Why is YieldFor needed at all?
